@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         questionTextView = findViewById(R.id.tv_title)
         answerEditText = findViewById(R.id.et_loan_amount)
